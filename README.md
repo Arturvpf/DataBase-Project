@@ -2,18 +2,18 @@
 
 *Developed as part of Database Systems course at UFPE (Universidade Federal de Pernambuco)*
 
-## 📖 Project Description
+## Project Description
 
 This project implements a comprehensive database system for managing university course evaluations. The system allows students to evaluate professors and courses, while maintaining information about universities, courses, prerequisites, monitors, and contacts.
 
-## 🎯 Objectives
+## Objectives
 
 - Design and implement a relational database for university course management
 - Create a system for student evaluations and comments
 - Demonstrate various SQL operations and query types
 - Implement proper database constraints and relationships
 
-## 🏗️ Database Structure
+## Database Structure
 
 ### Main Entities
 
@@ -31,7 +31,7 @@ This project implements a comprehensive database system for managing university 
 - **PRE_REQUISITO** (Prerequisite): Defines course prerequisites
 - **CONTATOS** (Contacts): Contact information for professors and monitors
 
-## ✅ Explored Scenarios
+## Explored Scenarios
 
 - ✅ Two universities with exclusive disciplines
 - ✅ Courses with and without monitors
@@ -41,7 +41,7 @@ This project implements a comprehensive database system for managing university 
 - ✅ Students evaluating different professors in different courses
 - ✅ Comments on evaluations with different opinions
 
-## 🔍 SQL Queries Demonstrated
+## SQL Queries Demonstrated
 
 The project includes various types of SQL operations:
 
@@ -59,7 +59,7 @@ The project includes various types of SQL operations:
   - Table: Professors above general average
 - **SET OPERATIONS**: Union of students who evaluated or commented
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 DataBase-Project/
@@ -67,7 +67,7 @@ DataBase-Project/
 └── README.md         # Project documentation
 ```
 
-## 🚀 How to Run
+## How to Run
 
 1. Clone this repository
 2. Open `Logic.sql` in your preferred SQL database management system
@@ -76,35 +76,35 @@ DataBase-Project/
    - Insert sample data
    - Run example queries
 
-## 💡 Key Features
+## Key Features
 
 - **Referential Integrity**: Proper foreign key relationships
 - **Data Validation**: Check constraints for data consistency
 - **Comprehensive Queries**: Examples of various SQL operations
 - **Sample Data**: Realistic test data for demonstration
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - SQL (Standard SQL with DDL, DML, and DQL operations)
 - Relational Database Design Principles
 - Entity-Relationship Modeling
 
-## 👥 Team Members
+## Team Members
 
-| Name | GitHub Username |
+| Name | Username |
 |------|----------------|
-| [Member 1 Name] | [@username1] |
-| [Member 2 Name] | [@username2] |
-| [Member 3 Name] | [@username3] |
-| [Member 4 Name] | [@username4] |
-| [Member 5 Name] | [@username5] |
-| [Member 6 Name] | [@username6] |
+| Artur Vinicius Pereira Fernandes | arturvpf |
+| Ariel Sharon| asvl |
+| Manoel Lira | mlc6|
+| Valter Sanches | vsmn |
+| Breno Ramos | brsg|
+| Caio Cesar nascimento | ccnvb |
 
-## 📝 License
+## License
 
 This project is developed for educational purposes as part of a database course at UFPE (Universidade Federal de Pernambuco).
 
-## 🤝 Contributing
+## Contributing
 
 This is an academic project. For suggestions or improvements, please contact the team members.
 
