@@ -1,0 +1,30 @@
+UNIVERSIDADE(id_universidade, nome, sigla, endereco_CEP, endereco_logradouro)
+
+CADEIRA(id_cadeira, fk_universidade, nome!, carga_horaria!)(1)
+fk_universidade -> UNIVERSIDADE(id_universidade)
+
+CADEIRA_ELETIVA(fk_universidade, fk_cadeira, esta_ofertada!)
+(fk_universidade, fk_cadeira) -> CADEIRA(id_universidade, id_cadeira)
+
+CADEIRA_OBRIGATORIA(fk_universidade, fk_cadeira, tem_monitor!, [id_monitor], nome_monitor)(2)
+(fk_universidade, fk_cadeira) -> CADEIRA(id_universidade, id_cadeira)
+
+PRE_REQUISITO(fk_universidade_tem, fk_cadeira_tem, fk_universidade_eh, fk_cadeira_eh)
+(fk_universidade_tem, fk_cadeira_tem) -> CADEIRA(id_universidade,id_cadeira)
+(fk_universidade_eh, fk_cadeira_eh) -> CADEIRA(id_universidade, id_cadeira)
+
+PROFESSOR(id_professor, nome!, nota_media)(3)
+
+CONTATOS(id_contato, contato, (fk_professor, fk_monitor)!)
+(fk_monitor) -> CADEIRA_OBRIGATORIA(id_monitor)
+(fk_professor) -> PROFESSOR(id_professor)
+
+ALUNO(id_aluno, nome)
+
+AVALIA(fk_professor, fk_universidade, fk_cadeira, fk_aluno, data, nota!)
+(fk_universidade, fk_cadeira) -> CADEIRA(id_universidade, id_cadeira)
+fk_professor -> PROFESSOR(id_professor)
+fk_aluno -> ALUNO(id_aluno)
+
+COMENTÁRIO(id_comentário, fk_professor!, fk_universidade!, fk_cadeira!, fk_aluno!, data!, texto!)
+(fk_professor, fk_universidade, fk_cadeira, fk_aluno, data) -> AVALIA(fk_professor, fk_universidade, fk_cadeira, fk_aluno, data)
