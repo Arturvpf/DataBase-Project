@@ -33,13 +33,13 @@ This project implements a comprehensive database system for managing university 
 
 ## Explored Scenarios
 
-- ✅ Two universities with exclusive disciplines
-- ✅ Courses with and without monitors
-- ✅ Mandatory and elective courses (some offered)
-- ✅ Prerequisites from multiple disciplines
-- ✅ Professors with average grades and varied contacts
-- ✅ Students evaluating different professors in different courses
-- ✅ Comments on evaluations with different opinions
+- Two universities with exclusive disciplines
+- Courses with and without monitors
+- Mandatory and elective courses (some offered)
+- Prerequisites from multiple disciplines
+- Professors with average grades and varied contacts
+- Students evaluating different professors in different courses
+- Comments on evaluations with different opinions
 
 ## SQL Queries Demonstrated
 
@@ -53,18 +53,18 @@ The project includes various types of SQL operations:
 ### Advanced Queries
 - **SEMI JOIN**: Find students who evaluated professors with high grades
 - **ANTI-JOIN**: Identify professors who never received evaluations
-- **Subqueries**: 
-  - Scalar: Find professor with highest average
-  - Row: Get professor with lowest average
-  - Table: Professors above general average
+- **Subqueries**:
+ - Scalar: Find professor with highest average
+ - Row: Get professor with lowest average
+ - Table: Professors above general average
 - **SET OPERATIONS**: Union of students who evaluated or commented
 
 ## Project Structure
 
 ```
 DataBase-Project/
-├── Logic.sql          # Complete database implementation
-└── README.md         # Project documentation
+├── Logic.sql # Complete database implementation
+└── README.md # Project documentation
 ```
 
 ## How to Run
@@ -72,9 +72,9 @@ DataBase-Project/
 1. Clone this repository
 2. Open `Logic.sql` in your preferred SQL database management system
 3. Execute the script to:
-   - Create all tables with proper constraints
-   - Insert sample data
-   - Run example queries
+ - Create all tables with proper constraints
+ - Insert sample data
+ - Run example queries
 
 ## Key Features
 
